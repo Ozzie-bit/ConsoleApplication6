@@ -3,10 +3,6 @@
 
 #include "stdafx.h"
 #include "library.h"
-#include "date.h"
-#include <iostream>
-#include <iomanip>
-#include <string>
 using namespace std;
 
 int main() {
@@ -29,6 +25,7 @@ int main() {
 	library.pass_on("Software Engineering", Date(2015, 4, 5, DateFormat::US));
 	library.pass_on("Software Engineering", Date(2015, 4, 10, DateFormat::US));
 	library.pass_on("Software Engineering", Date(2015, 4, 15, DateFormat::US));
+
 	system("pause");
 	return 0;
 }

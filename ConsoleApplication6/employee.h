@@ -18,9 +18,7 @@ private:
 public:
 	employee();
 	employee(string theName);
-	int getWaitTime();
 	string getName();
-	int getRetainTime();
 	void setRetainTime(Date currentDate, Date lastPass);
 	void setWaitTime(Date firstDate, Date currentDate);
 	int getPriority();

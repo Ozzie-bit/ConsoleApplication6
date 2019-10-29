@@ -21,11 +21,6 @@ book::~book() {
 
 }
 
-void book::addToCirculation(const Date& date) {
-	start_date = date;
-	lastPass = date;
-}
-
 string book::getName() {
 	return name;
 }
@@ -37,6 +32,10 @@ void book::add_employee(employee*& personnel) {
 void book::setArchived(const Date& date) {
 	archived = true;
 	end_date = date;
+}
+
+void book::firstGuy() {
+	cout << theQueue.get_top()->getName() << "is the first person to recieve " << name << endl;;
 }
 
 void book::passOn(const Date& passDate) {
@@ -60,17 +59,6 @@ void book::passOn(const Date& passDate) {
 void book::set_start_date(Date theDate) {
 	start_date = theDate;
 	lastPass = theDate;
-}
-void book::set_end_date(Date theDate) {
-	end_date = theDate;
-}
-
-Date book::get_start_date() {
-	return start_date;
-}
-
-Date book::get_end_date() {
-	return end_date;
 }
 
 bool book::getArchived() {

@@ -16,14 +16,6 @@ employee::employee(string theName) {
 	retainTime = 0;
 }
 
-int employee::getRetainTime() {
-	return retainTime;
-}
-
-int employee::getWaitTime() {
-	return waitTime;
-}
-
 void employee::setWaitTime(Date firstDate, Date currentDate) {
 	waitTime = currentDate - firstDate;
 }

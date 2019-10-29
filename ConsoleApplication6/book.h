@@ -13,12 +13,8 @@ public:
 	book();
 	book(const string& bookName);
 	~book();
-	void addToCirculation(const Date& date);
 	void setArchived(const Date& date);
-	Date get_start_date();
 	void set_start_date(Date theDate);
-	void set_end_date(Date theDate);
-	Date get_end_date();
 	string getName();
 	void add_employee(employee*& personnel);
 	void passOn(const Date& passDate);
@@ -27,7 +23,6 @@ public:
 	employee* get_top();
 
 private:
-	list<employee*> waitingEmployees;
 	string name;
 	bool archived;
 	Date start_date;

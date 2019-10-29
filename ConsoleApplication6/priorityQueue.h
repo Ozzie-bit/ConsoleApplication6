@@ -11,16 +11,8 @@
 #define prioirtyQueue_h
 
 #include <stdio.h>
-
 #include <list>
-
 #include "employee.h"
-
-#include <vector>
-
-#include <algorithm>
-
-#include <iostream>
 
 using namespace std;
 
