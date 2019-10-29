@@ -34,10 +34,6 @@ void book::setArchived(const Date& date) {
 	end_date = date;
 }
 
-void book::firstGuy() {
-	cout << theQueue.get_top()->getName() << "is the first person to recieve " << name << endl;;
-}
-
 void book::passOn(const Date& passDate) {
 	employee *mostNeeded;
 	employee *otherEmployee;
