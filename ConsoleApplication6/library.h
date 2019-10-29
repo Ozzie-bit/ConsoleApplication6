@@ -7,21 +7,25 @@
 #include "employee.h"
 #include "book.h"
 #include <string>
-#include <queue>
+#include <list>
+#include "date.h"
 
 using namespace std;
-template <typename T>
+
 class library {
-private:
-	
 public:
-	Library();
-	~Library();
+	library();
+	~library();
 
 	void add_employee(string name);
 	void add_book(string bookName);
-	void pass_on();
-	void circulate_book();
+	void pass_on(string bookName, Date& book_pass);
+	void circulate_book(string bookName, Date& date_cir);
+
+private:
+	list <book> books_archived;
+	list <book> books_circulated;
+	list <employee*> employees;
 };
 
 #endif

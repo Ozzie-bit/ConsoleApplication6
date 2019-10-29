@@ -9,22 +9,21 @@
 #include <queue>
 
 using namespace std;
-template <typename T>
+
 class employee {
 private:
-	T name;
-	T waitTime = 0;
-	T retainTime = 0;
-	queue<T> employeeQueue;
+	string name;
+	int waitTime;
+	int retainTime;
 public:
 	employee();
-	~employee();
-	push(const T&the_data);
-	pop();
-	T getWaitTime();
-	T getRetainTime();
-	T setRetainTime(int theRetainTime);
-	T setWaitTime(int theWaitTime);
+	employee(string theName);
+	int getWaitTime();
+	string getName();
+	int getRetainTime();
+	void setRetainTime(Date currentDate, Date lastPass);
+	void setWaitTime(Date firstDate, Date currentDate);
+	int getPriority();
 };
 
 #endif
